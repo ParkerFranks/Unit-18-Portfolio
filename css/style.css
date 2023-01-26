@@ -40,7 +40,7 @@ header p {
   max-width: 1200px;
   margin: 0 auto;
   padding: 25px;
-  margin-top: 30px;
+  margin-top: 10px;
   /* background-color: navy; */
   text-align: center;
 }
@@ -136,3 +136,21 @@ p{
   font-size: 25px;
   text-align: left;
 }
+/* MEDIA QUERY CODE  */
+
+@media only screen and (max-width: 600px) {
+  .flex-container {
+  flex-direction: column;
+  }
+  .flex-child {
+  width: 100%;
+  }
+  .grid-container {
+  grid-template-areas:
+  "header header"
+  "main main"
+  "footer footer";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 100%;
+  }
+  }
